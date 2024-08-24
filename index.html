@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- Font Awesome CDN-->  
+  <script src="https://kit.fontawesome.com/466e7ac4c5.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'round': '#ABEF5F',
+            'home': '#494949',
+            'Services': '#737373',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .manrope {
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body class="manrope bg-[#F4F4F4]">
+  <!-- Header started -->
+  <header class="">
+    <!-- Nav started -->
+    <nav class=" py-3">
+      <div class="navbar">
+        <div class="navbar-start ml-4 md:ml-16 lg:ml-28">
+          <p class="bg-round w-[35px] h-[35px] rounded-full text-xl text-center flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></p>
+          <p class="text-[32px] font-extrabold ml-2">Rinterio</p>
+        </div>
+        <div class="navbar-center lg:flex hidden">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-base font-extrabold text-home">Home</a></li>
+            <li><a class="text-base font-normal text-Services">Service</a></li>
+            <li><a class="text-base font-normal text-Services">Portfolio</a></li>
+            <li><a class="text-base font-normal text-Services">Blogs</a></li>
+            <li><a class="text-base font-normal text-Services">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end mr-4 md:mr-16 lg:mr-28">         
+          <div class="hidden lg:flex mr-4 space-x-4">
+            <p class="bg-white text-Services w-[40px] h-[40px] flex items-center justify-center rounded-full text-lg text-center border-2"><i class="fa-solid fa-cart-shopping"></i></p>
+            <p class="bg-white text-Services w-[40px] h-[40px] flex items-center justify-center rounded-full text-lg text-center border-2"><i class="fa-solid fa-magnifying-glass"></i></p>
+          </div>
+          <div class="hidden lg:flex items-center justify-center bg-round w-[210px] h-[50px] rounded-3xl ">
+            <a class="hidden lg:inline text-xl font-extrabold text-[#1C1C1C]">Book Consult</a>
+            <p class="bg-[#1C1C1C] text-white w-[35px] h-[35px] flex items-center justify-center rounded-full text-lg text-center ml-2"><i class="fa-solid fa-arrow-right -rotate-45 "></i></p>
+          </div>
+          <div class="dropdown lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner started -->
+    <div>
+      <!-- image part -->
+      <div></div>
+      <!-- Text part -->
+      <div></div>
+    </div> 
+  </header>
+  <!-- Main started -->
+  <main>
+    
+  </main>
+  <!-- Footer started -->
+  <footer>
+
+  </footer>
+</body>
+</html>
