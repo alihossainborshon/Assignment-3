@@ -23,6 +23,10 @@
             'round': '#ABEF5F',
             'home': '#494949',
             'Services': '#737373',
+            'bann_end': 'rgba(171, 239, 95, 0.5)',
+            'big_txt': '#212121',
+            
+
           }
         }
       }
@@ -39,9 +43,9 @@
 </head>
 <body class="manrope bg-[#F4F4F4]">
   <!-- Header started -->
-  <header class="">
+  <header class="md:container mx-auto">
     <!-- Nav started -->
-    <nav class=" py-3">
+    <nav class="py-7">
       <div class="navbar">
         <div class="navbar-start ml-4 md:ml-16 lg:ml-28">
           <p class="bg-round w-[35px] h-[35px] rounded-full text-xl text-center flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></p>
@@ -94,11 +98,20 @@
       </div>
     </nav>
     <!-- Banner started -->
-    <div>
+    <div class="flex flex-col items-center">
       <!-- image part -->
-      <div></div>
+      <div>
+        <img class="mb-10" src="assets/banner.png" alt="">
+      </div>
       <!-- Text part -->
-      <div></div>
+      <div class="space-y-10 flex flex-col items-center text-center mb-12">
+        <h1 class="text-6xl font-extrabold text-big_txt">A barn house of this design has a striking appearance</h1>
+        <p class="text-base font-medium text-home w-3/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <div class="flex items-center justify-center bg-bann_end w-[210px] h-[50px] rounded-3xl">
+          <a class="lg:inline text-xl font-extrabold text-[#1C1C1C]">Book Consult</a>
+          <p class="bg-round w-[35px] h-[35px] rounded-full text-xl text-center border-round flex items-center justify-center ml-2"><i class="fa-solid fa-arrow-right -rotate-45"></i></p>
+        </div>
+      </div>
     </div> 
   </header>
   <!-- Main started -->
