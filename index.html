@@ -36,22 +36,22 @@
     .manrope {
       font-family: "Manrope", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 400;
+      font-weight: 500;
       font-style: normal;
     }
   </style>
 </head>
 <body class="manrope bg-[#F4F4F4]">
   <!-- Header started -->
-  <header class="md:container mx-auto">
+  <header class="">
     <!-- Nav started -->
     <nav class="py-7">
       <div class="navbar">
-        <div class="navbar-start ml-4 md:ml-16 lg:ml-28">
-          <p class="bg-round w-[35px] h-[35px] rounded-full text-xl text-center flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></p>
+        <div class="navbar-start ml-4 md:ml-16 lg:ml-20 p-1">
+          <p class="bg-round w-9 h-9 rounded-full text-xl text-center flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></p>
           <p class="text-[32px] font-extrabold ml-2">Rinterio</p>
         </div>
-        <div class="navbar-center lg:flex hidden">
+        <div class="navbar-center lg:flex hidden w-1/2">
           <ul class="menu menu-horizontal px-1">
             <li><a class="text-base font-extrabold text-home">Home</a></li>
             <li><a class="text-base font-normal text-Services">Service</a></li>
@@ -60,15 +60,12 @@
             <li><a class="text-base font-normal text-Services">Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end mr-4 md:mr-16 lg:mr-28">         
-          <div class="hidden lg:flex mr-4 space-x-4">
-            <p class="bg-white text-Services w-[40px] h-[40px] flex items-center justify-center rounded-full text-lg text-center border-2"><i class="fa-solid fa-cart-shopping"></i></p>
-            <p class="bg-white text-Services w-[40px] h-[40px] flex items-center justify-center rounded-full text-lg text-center border-2"><i class="fa-solid fa-magnifying-glass"></i></p>
+        <div class="navbar-end mr-4 md:mr-16 lg:mr-20">         
+          <div class="hidden md:flex mr-4 space-x-4">
+            <p class="bg-white z-10 text-Services w-10 h-10 flex items-center justify-center rounded-full text-lg text-center border-2"><i class="fa-solid fa-cart-shopping"></i></p>
+            <p class="bg-white z-10 text-Services w-10 h-10 flex items-center justify-center rounded-full text-lg text-center border-2"><i class="fa-solid fa-magnifying-glass"></i></p>
           </div>
-          <div class="hidden lg:flex items-center justify-center bg-round w-[210px] h-[50px] rounded-3xl ">
-            <a class="hidden lg:inline text-xl font-extrabold text-[#1C1C1C]">Book Consult</a>
-            <p class="bg-[#1C1C1C] text-white w-[35px] h-[35px] flex items-center justify-center rounded-full text-lg text-center ml-2"><i class="fa-solid fa-arrow-right -rotate-45 "></i></p>
-          </div>
+          <button class="btn hidden md:flex items-center justify-center bg-round rounded-3xl"><span class="hidden md:inline text-xl font-extrabold text-[#1C1C1C]">Book Consult</span><span class="bg-[#1C1C1C] text-white w-9 h-9 flex items-center justify-center rounded-full text-lg text-center ml-2"><i class="fa-solid fa-arrow-right -rotate-45 "></i></span></i></button>
           <div class="dropdown lg:hidden">
             <div tabindex="0" role="button" class="btn btn-ghost">
               <svg
@@ -86,7 +83,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-24 p-1 shadow">
               <li><a>Home</a></li>
               <li><a>Service</a></li>
               <li><a>Portfolio</a></li>
@@ -98,7 +95,7 @@
       </div>
     </nav>
     <!-- Banner started -->
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center px-2 sm:px-5 md:px-10 lg:px-20 ">
       <!-- image part -->
       <div>
         <img class="mb-10" src="assets/banner.png" alt="">
@@ -106,17 +103,58 @@
       <!-- Text part -->
       <div class="space-y-10 flex flex-col items-center text-center mb-12">
         <h1 class="text-6xl font-extrabold text-big_txt">A barn house of this design has a striking appearance</h1>
-        <p class="text-base font-medium text-home w-3/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-        <div class="flex items-center justify-center bg-bann_end w-[210px] h-[50px] rounded-3xl">
-          <a class="lg:inline text-xl font-extrabold text-[#1C1C1C]">Book Consult</a>
-          <p class="bg-round w-[35px] h-[35px] rounded-full text-xl text-center border-round flex items-center justify-center ml-2"><i class="fa-solid fa-arrow-right -rotate-45"></i></p>
+        <p class="text-base font-medium text-home">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <button class="btn flex items-center justify-center bg-bann_end  rounded-3xl"><span class="lg:inline text-xl font-extrabold text-[#1C1C1C]">View Details</span><span class="bg-round w-9 h-9 rounded-full text-xl text-center border-round flex items-center justify-center ml-2"><i class="fa-solid fa-arrow-right -rotate-45 "></i></span></i></button>
         </div>
       </div>
-    </div> 
+    </div>  
   </header>
   <!-- Main started -->
-  <main>
-    
+  <main class="mx-auto">
+  <!-- Liveable Spaces Section -->
+  <div class="hero bg-base-200 min-h-screen px-20 mt-10 ">
+    <div class="hero-content flex-col lg:flex-row gap-5 items-stretch">
+      <div class="lg:relative space-y-4 flex-1 flex flex-col">
+        <div class="lg:absolute -top-8 -left-16 lg:flex hidden">
+          <img src="assets/Vector.png" alt="">
+        </div>
+        <div class="text-center lg:text-start">
+          <button class="btn btn-sm bg-white rounded-3xl">
+            <span class="lg:inline text-xs font-extrabold text-[#1C1C1C]">
+              <i class="fa-solid fa-arrow-right mr-2"></i>About Us
+            </span>
+          </button>
+        </div>
+        <div class="space-y-7 text-center lg:text-start">
+          <h1 class="text-5xl font-black tracking-tighter text-[#212121] leading-[50px]">We design thoughtful, liveable spaces</h1>
+          <p class="text-base font-medium text-home">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class="flex flex-col lg:flex-col md:flex-row items-center gap-5">
+          <div class="bg-white flex gap-5 rounded-3xl p-5">
+            <div class="w-24 h-24">
+              <img src="assets/commercial.png" alt="" class="object-cover rounded-lg">
+            </div>
+            <div class="space-y-1">
+              <h4 class="text-xl font-extrabold text-[#494949]">Commercial</h4>
+              <p class="text-base font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+          <div class="bg-white flex gap-5 rounded-3xl p-5">
+            <div class="w-24 h-24">
+              <img src="assets/residential.png" alt="" class="object-cover rounded-lg">
+            </div>
+            <div class="space-y-1">
+              <h4 class="text-xl font-extrabold text-[#494949]">Residential</h4>
+              <p class="text-base font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center items-center md:w-full ">
+        <img src="assets/Rectangle.png" class="w-full h-full max-w-3xl max-h-lg rounded-xl shadow-2xl object-cover" />
+      </div>
+    </div>
+  </div>
   </main>
   <!-- Footer started -->
   <footer>
